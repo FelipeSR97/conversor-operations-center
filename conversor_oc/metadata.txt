@@ -1,0 +1,18 @@
+[general]
+name=Conversor Operations Center
+qgisMinimumVersion=3.22
+description=Converte mapas de trabalho de monitores de terceiros (Stara, Hexagon, Verion, Trimble, GS3/GS4, Jacto, AgNav, SPRAYING, Topcon) e empacota/recupera pastas TASKDATA (ISOXML) para o padrão aceito pelo John Deere Operations Center.
+about=Detecta o formato pelas colunas do shapefile, monta as colunas no padrão Stara com Tempo, remove polígonos vazios, fecha anéis, reprojeta para WGS84, junta arquivos repetidos e gera um zip por trabalho, além de um relatório CSV com os avisos de cada arquivo.
+version=0.3.0
+author=Felipe Santos Rocha
+email=fsrrocha97@gmail.com
+category=Vector
+homepage=https://github.com/FelipeSR97/conversor-operations-center
+repository=https://github.com/FelipeSR97/conversor-operations-center
+tracker=https://github.com/FelipeSR97/conversor-operations-center/issues
+tags=isoxml,taskdata,isobus,topcon,operations center, john deere, shapefile, agricultura de precisão, mapa de aplicação
+changelog=0.3.0: testes automáticos; corrige remoção de tarefa ISOXML vazia, texto "None" nos campos da OS e data de GPS zerada em arquivos pequenos. 0.2.2: ao recriar o TASKDATA.XML, remove P231_cur_task (Topcon). 0.2.1: nome do zip usa a pasta de entrada real; XML recriados mantêm o fim de linha original (LF), também no Windows. 0.2.0: pastas TASKDATA (ISOXML) enviadas sem conversão, recuperação de backup sem TASKDATA.XML, exclusão de tarefas de teste, relatórios Topcon ignorados quando há TASKDATA.
+experimental=True
+deprecated=False
+hasProcessingProvider=yes
+icon=icon.png

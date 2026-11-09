@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+dist/
+# nunca versionar mapas reais de clientes
+*.shp
+*.shx
+*.dbf
+*.prj
+*.cpg
+*.zip
+TASKDATA*/
